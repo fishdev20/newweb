@@ -20,7 +20,7 @@
   <!--  -->
   <div class="promo">
     <div class="welcome">
-      <span><i class='bx bx-bookmark'></i> Welcome to Franco - an e-Commerce PSD Template!</span>
+      <a href="#"><i class='bx bx-bookmark'></i> Welcome to Franco - an e-Commerce PSD Template!</a>
     </div>
     <div class="login">
       <a href="#"><i class='bx bxs-cog'></i> Shop Setting</a>
@@ -68,14 +68,14 @@
               <a href="#" class="nav-link">Contact</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link"><i class="bx bx-search"></i></a>
+              <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
             </li>
           </ul>
         </div>
         <div class="icons d-flex">
-          <div><i class="bx bx-heart"></i></div>
+          <div><i class="far fa-heart"></i></div>
           <div>
-            <i class="bx bx-shopping-bag"></i>
+            <i class="fas fa-shopping-cart"></i>
             <span class="align-center">0</span>
           </div>
         </div>
@@ -89,43 +89,49 @@
   </header>
   <!--END HEADER -->
 
-  <!--ADS-->    
-  <div class="image-gallery">
-    <div class="image-box img1">
-      <img src="image/ads1@2x.png" alt="">
-      <div class="overlay-1">
-          <div class="details">
-              <h3 class="text1">
-                  Two High-end Materials
-              </h3>
-              <div class="shop-now" style="color: white;">
-                Shop Now
-              </div>  
-          </div>    
-      </div>
-    </div>
-    <div class="image-box img2">
-        <img src="image/ads2@2x.png" alt="">
-        <div class="overlay-2">
-            <div class="details">
-              <span class="small-thing">SMALL THING</span><br>
-              <span class="make-different">MAKE DIFFERENT</span>
-            </div>    
-        </div>
-    </div>
-    <div class="image-box img3">
-        <img src="image/ads3@2x.png" alt="" >
-        <div class="overlay-3">
-          <div class="details">
-            <span class="folio">FOLIO</span><br>
-            <span class="backpack">BACKPACK</span>
-            <div class="shop-now-2" style="color: white;">
+  <!-- ADS-->
+  <div class="ads container">
+		<div class="row-ads banner">
+			<div class="banner-left col">
+				<div class="banner-left-content">
+					<img src="image/ads1@2x.png" alt="">
+          <div class="details1">
+            <p class="text1">
+                Two High-end Materials
+            </p>
+            <div class="shop-now" style="color: white;">
               Shop Now
+            </div>  
+        </div>    
+				</div>
+			</div>
+			<div class="banner-right col">
+				<div class="banner-right-content row-ads">
+					<div class="banner-right-content-top col">
+						<img src="image/ads2@2x.png" alt="">
+            <div class="overlay-2">
+              <div class="details2">
+                <span class="small-thing">SMALL THING</span><br>
+                <span class="make-different">MAKE DIFFERENT</span>
+              </div>    
             </div>
-          </div>    
-        </div>
-    </div>
-  </div>
+					</div>
+					<div class="banner-right-content-bottom col">
+						<img src="image/ads3@2x.png" alt="">
+            <div class="overlay-3">
+              <div class="details3">
+                <span class="folio">FOLIO</span><br>
+                <span class="backpack">BACKPACK</span>
+                <div class="shop-now-2" style="color: white;">
+                  Shop Now
+                </div>
+              </div>    
+            </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
   <!--END ADS-->
 
 
@@ -341,7 +347,7 @@
         NEWS & EVENTS
       </div>
     </div>
-    <div class="card-wrapper responsive flex ">
+    <div class="card-wrapper responsive container flex ">
         <div class="post">
           <div class="post-contain">
             <div class="image-blog">
@@ -539,7 +545,7 @@
           
           <div id="location">
             <div class="map">
-                <a href=""><i class="fas fa-map-marker-alt"></i>
+                <a href=""><i class='bx bx-map-alt'></i>
                   500 Hennessy Road 
                   Causeway Bay,Hong Kong
                 </a>
@@ -559,8 +565,22 @@
           </div>
         </div>
       </div>
+      <div class="copy-payment">
+        <div class="copy">
+          <p>
+            Copyright 2015 & Made with <span> <i class="fas fa-heart"></i></span> by <span class="company"> ArrowHitech.</span>
+          </p>
+        </div>
+        <div class="payment">
+          <a href=""><i class="fab fa-cc-visa"></i></a>
+          <a href=""><i class="fab fa-cc-paypal"></i></a>
+          <a href=""><i class="fab fa-cc-mastercard"></i></a>
+          <a href=""><i class="fab fa-cc-mastercard"></i></a>
+          <a href=""><i class="fab fa-cc-mastercard"></i></a>
+        </div>
+      </div>
     </div>
-    </div>
+  </div>
   </footer>
   <!--END FOOTER-->
 
@@ -612,9 +632,7 @@
                 slidesToScroll: 1
               }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
+            
           ]
         });
   
